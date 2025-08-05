@@ -1,0 +1,186 @@
+.navbar {
+    font-family: 'Poppins';
+    width: 100%;
+
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    flex-direction: row;
+}
+
+.navbar-container {
+    margin: auto;
+    max-width: 1700px;
+    padding: 0 5rem;
+    width: 100%;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.site-logo {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 2.5rem !important;
+}
+
+.navbar-menu a {
+    font-weight: 400;
+    font-size: .9rem;
+    margin: 10px;
+    color: rgb(116, 116, 116);
+    transition: transform 0.3s ease;
+    width: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.navbar-etc a {
+    font-weight: 400;
+    font-size: .9rem;
+    padding: 0 !important;
+}
+
+.navbar-menu .nav-link:hover {
+    color: #222;
+    transform: scale(1.05);
+    font-weight: 500;
+}
+
+.icon-container svg {
+    transition: transform 0.3s ease;
+}
+
+.icon-container svg:hover {
+    transform: scale(1.1);
+    font-weight: 500;
+}
+
+.navbar-menu .nav-link:not(:hover) {
+    color: rgb(125, 125, 125);
+}
+
+.navbar-etc .nav-link:hover {
+    color: #222;
+}
+
+.navbar-etc .nav-link:not(:hover) {
+    color: rgb(125, 125, 125);
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-user-name {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.user-name {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.2px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border-right: 2px solid #222;
+    padding-right: 15px;
+    cursor: default;
+}
+
+.navbar-expand-lg .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-btn {
+    padding: 7px 15px;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Poppins";
+    font-weight: 400;
+    outline: 0;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.log-btn:hover {
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    color: #d53b24;
+}
+
+.fa-cart-shopping {
+    transition: transform 0.3s ease;
+}
+
+.fa-cart-shopping:hover {
+    transform: scale(1.05);
+}
+
+@media all and (max-width:1023px) {
+    .navbar-toggler {
+        border-radius: none !important;
+        border: none !important;
+    }
+
+    .navbar-toggler {
+        box-shadow: none !important;
+    }
+
+    .navbar-menu {
+        align-items: center;
+    }
+
+    .navbar-etc a {
+        margin: 10px;
+    }
+
+    .navbar-menu a:hover {
+        transform: none !important;
+    }
+
+    .navbar-etc .nav-link:hover {
+        transform: none !important;
+    }
+
+    .navbar-etc {
+        text-align: center !important;
+        margin: auto !important;
+    }
+}
+
+@media all and (max-width:479px) {
+    .navbar {
+        padding: 0 !important;
+    }
+}

@@ -1,0 +1,8 @@
+[
+    {
+        "type": ["pants", "top"],
+        "material": ["viscose", "lyocell", "cotton", "polyester", "polyamide", "elastane", "linen"],
+        "color": ["black", "gray", "white", "blue", "beige", "green"],
+        "gender": ["women", "men"]
+    }
+]

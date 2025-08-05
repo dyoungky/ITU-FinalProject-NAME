@@ -1,0 +1,113 @@
+.sub-title {
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    margin: 3% 0 2% 0;
+}
+
+.product {
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in;
+    margin-bottom: 50px;
+    flex-basis: calc(100% / 3);
+}
+
+.product a {
+    position: relative;
+}
+
+.product:hover {
+    transform: scale(1.02);
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-contents {
+    padding: 2%;
+}
+
+.product-name {
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+}
+
+.product-price {
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.color-box {
+    width: 13px;
+    height: 13px;
+    display: block;
+    border: 1px solid #222;
+}
+
+.is-new {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.add-cart-btn {
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    fill: #000;
+    font-size: .8rem;
+    font-weight: 400;
+    height: 40px;
+    width: 93%;
+    margin: auto;
+    justify-content: center;
+    line-height: 24px;
+    min-width: 120px;
+    outline: 0;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.add-cart-btn:hover {
+    background-color: #3e8eff;
+    border-color: #3e8eff;
+    fill: #3e8eff;
+    color: #fff;
+}
+
+.add-cart-btn:active {
+    background-color: #d7d7d7;
+    border-color: #d7d7d7;
+    fill: #9f9f9f;
+}
+
+.add-cart-btn::after {
+    content: "Add to Cart";
+}
+
+.add-cart-btn:active::after {
+    content: "Added";
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .product {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}

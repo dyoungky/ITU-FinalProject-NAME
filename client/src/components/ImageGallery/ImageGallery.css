@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.image-gallery {
+    display: flex;
+    position: relative;
+}
+  
+.main-image {
+    margin-right: 20px;
+    position: relative;
+}
+  
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+  
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+  
+.thumbnails img {
+    width: 50px; 
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 5px;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.thumbnails img:hover {
+    opacity: 1;
+}
+
+.arrow-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    pointer-events: none;
+}
+
+.arrow-buttons button {
+    pointer-events: all;
+    background: transparent;
+    border: none;
+    color: darkgrey;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.arrow-buttons button:hover {
+    color: black;
+}
+
+/*----------------------------- MEDIA QUERY */
+
+/* Smaller smartphones (~ 479px) AND Tablets & larger smartphones (480px ~ 767px) */
+@media all and (max-width: 767px) {
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .thumbnails {
+        display: none;
+    }
+
+    .main-image {
+        order: 1;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .main-image img {
+        border-radius: 0px;
+    }
+}
+
+/* Laptops, larger tablets in landscape, and small desktops (768px ~ 1023px) */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .arrow-buttons {
+        display: none;
+    }
+}
+
+/* Big screens smartphones (over 1024px) */
+@media all and (min-width: 1024px) {
+    .arrow-buttons {
+        display: none;
+    }
+}
+
+
+

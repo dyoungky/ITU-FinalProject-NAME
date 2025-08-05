@@ -1,0 +1,9 @@
+.page-container {
+    max-width: 1200px;
+    font-family: 'Poppins';
+    padding: 2rem 10rem !important;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    margin: 40px 0 10px 0;
+}

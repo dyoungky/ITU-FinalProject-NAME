@@ -1,0 +1,27 @@
+.limited-offer-box {
+    background-color: #ffe06e;
+    width: 100%;
+    padding: .7rem 2rem;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.limited-offer-box span {
+    font-weight: 700;
+}
+
+.limited-offer-box div {
+    display: inline;
+}
+
+@media all and (min-width:480px) and (max-width:767px) {
+    .limited-offer-box {
+        font-size: 0.8rem;
+    }
+
+    .limited-offer-box div {
+        display: block;
+    }
+}
+
+@media all and (max-width:479px) {}

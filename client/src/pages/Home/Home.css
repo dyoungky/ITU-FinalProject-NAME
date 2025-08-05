@@ -1,0 +1,113 @@
+.main-banner-box img {
+    width: 100%;
+}
+
+.main-banner-box {
+    position: relative;
+    max-width: 1700px;
+    margin: auto;
+}
+
+.new-promotion-text {
+    font-family: 'Poppins';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    padding: 2rem 4.5rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.new-promotion-text p:first-of-type {
+    font-family: "Merriweather", serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.new-promotion-text p:nth-of-type(2) {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+
+@media all and (min-width:768px) and (max-width:1023px) {
+    .main-banner-box img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .new-promotion-text {
+        width: 100%;
+    }
+
+    .new-promotion-text p:first-of-type {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .new-promotion-text p:nth-of-type(2) {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .shop-now-btn {
+        font-size: .7rem;
+    }
+}
+
+@media all and (min-width:480px) and (max-width:767px) {
+    .main-banner-box img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .new-promotion-text {
+        width: 100%;
+    }
+
+    .new-promotion-text p:first-of-type {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .new-promotion-text p:nth-of-type(2) {
+        font-size: .9rem;
+        margin-bottom: 20px;
+    }
+
+    .shop-now-btn {
+        font-size: .7rem;
+    }
+}
+
+@media all and (max-width:479px) {
+    .main-banner-box img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .new-promotion-text {
+        width: 100%;
+        padding: 2rem 3rem;
+    }
+
+    .new-promotion-text p:first-of-type {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .new-promotion-text p:nth-of-type(2) {
+        font-size: .9rem;
+        margin-bottom: 20px;
+    }
+
+    .shop-now-btn {
+        font-size: .7rem;
+    }
+
+}

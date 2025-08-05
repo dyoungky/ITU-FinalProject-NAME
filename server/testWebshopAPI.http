@@ -1,0 +1,126 @@
+// 🟡 BASKETS
+// * User johndoe
+// Create a new basket for a user
+POST http://localhost:4000/baskets/johndoe HTTP/1.1
+content-type: application/json
+
+{"products": []}
+###
+
+// Add a new product to a specific basket 
+POST http://localhost:4000/baskets/johndoe/products HTTP/1.1
+content-type: application/json
+
+{"product_id": 20, "product_name": "Classic straight jeans", "size": "M", "amount": 1, "price": 80}
+###
+
+// Get products from specific basket
+GET http://localhost:4000/baskets/johndoe/products HTTP/1.1
+###
+
+// Delete product from basket
+DELETE  http://localhost:4000/baskets/johndoe/products/20 HTTP/1.1
+content-type: application/json
+
+{"size": "M"}
+
+###
+
+
+// * User Jane123
+// Create a new basket for a user
+POST http://localhost:4000/baskets/Jane123 HTTP/1.1
+content-type: application/json
+
+{"products": []}
+###
+
+// Get products from specific basket
+GET http://localhost:4000/baskets/Jane123/products HTTP/1.1
+###
+
+// Add a product to a specific basket
+POST http://localhost:4000/baskets/Jane123/products HTTP/1.1
+content-type: application/json
+
+{"product_id": 19, "product_name": "Classic straight jeans", "size": "M", "amount": 1, "price": 80}
+###
+
+// Update item according to amount
+PUT http://localhost:4000/baskets/Jane123/products/19 HTTP/1.1
+content-type: application/json
+
+{"product_id":19,"product_name":"Classic straight jeans","amount":3, "size": "M", "price":80} 
+###
+
+// Delete product from basket
+DELETE  http://localhost:4000/baskets/Jane123/products/19 HTTP/1.1
+content-type: application/json
+
+{"size": "M"}
+
+###
+
+
+
+// 🟡 USERS
+// * User johndoe
+// Create a new user
+POST http://localhost:4000/users HTTP/1.1
+content-type: application/json
+
+{"username": "johndoe", "first_name": "John", "last_name": "Doe", "email": "johndoe@gmail.com", "password": "something123"}
+###
+
+// Get information about a specific user
+GET http://localhost:4000/users/johndoe HTTP/1.1
+###
+
+
+// * User Jane123
+// Create new user
+POST http://localhost:4000/users HTTP/1.1
+content-type: application/json
+
+{"username": "Jane123", "first_name": "Jane", "last_name": "Doe", "email": "janedoe@gmail.com", "password": "something1234"}
+###
+
+// Get information about a specific user
+GET http://localhost:4000/users/Jane123 HTTP/1.1
+###
+
+
+// * User JaneSmith 
+//Create a new basket for a user that doesn't exist
+POST http://localhost:4000/users/JaneSmith/baskets HTTP/1.1
+content-type: application/json
+
+{"username": "JaneSmith", "basket_id": 1, "products": []}
+###
+
+
+
+
+
+// 🟡 PRODUCTS
+// Get all products
+GET http://localhost:4000/products HTTP/1.1
+###
+
+// Get specific product using product_id
+GET http://localhost:4000/products/19 HTTP/1.1
+###
+
+// Get all products by category
+GET http://localhost:4000/products/color/black HTTP/1.1
+###
+
+
+
+
+
+// 🟡 CATEGORIES
+// Get all categories
+GET http://localhost:4000/categories HTTP/1.1
+###
+

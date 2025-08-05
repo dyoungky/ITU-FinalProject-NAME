@@ -1,0 +1,95 @@
+/* AddToCartButton.module.css */
+.add_cart_btn,
+.add_cart_btn_added,
+.select_size_btn {
+    min-width: 100%;
+}
+
+.add_cart_btn {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    align-items: center;
+    background-color: #3e8eff;
+    color: #fff;
+    border: 1px solid #3e8eff;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    fill: #3e8eff;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    line-height: 24px;
+    min-width: 120px;
+    outline: 0;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 20px;
+}
+
+.add_cart_btn:active {
+    background-color: #2471dd;
+    border-color: #2471dd;
+    fill: #2471dd;
+}
+
+.add_cart_btn_added {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    align-items: center;
+    background-color: #4c4c4c;
+    border: 2px solid #4c4c4c;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    fill: #000;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    line-height: 24px;
+    min-width: 120px;
+    outline: 0;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 20px;
+}
+
+.select_size_btn {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    fill: #000;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    line-height: 24px;
+    min-width: 120px;
+    outline: 0;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 20px;
+}

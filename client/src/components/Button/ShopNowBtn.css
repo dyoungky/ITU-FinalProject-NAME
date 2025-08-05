@@ -1,0 +1,58 @@
+.shop-now-btn {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.shop-now-btn:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.shop-now-btn:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.shop-now-btn:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #000000;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #fff;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.shop-now-btn:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #ffffff;
+    display: block;
+    padding: 0 20px;
+    border-radius: 10px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: transparent;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+    border: 2px solid #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.387);
+}
