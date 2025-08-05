@@ -83,3 +83,5 @@ yarn-error.log*
 # dotenv environment files
 .env
 .env.*.local
+
+client/node_modules/
