@@ -33,7 +33,7 @@ follows industry standards, ensuring a seamless and intuitive user experience. T
 ### ﹅ Installation
 
 ```bash
-git clone https://github.com/dyoungky/ITU-Name.git
+git clone https://github.com/dyoungky/ITU-FinalProject-NAME.git
 cd ITU-Name
 npm install
 npm start
