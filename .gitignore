@@ -85,3 +85,4 @@ yarn-error.log*
 .env.*.local
 
 client/node_modules/
+*.gif
