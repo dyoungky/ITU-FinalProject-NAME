@@ -1,6 +1,6 @@
 # E-commerce Clothes shop
 
-![Webshop Screenshot](images/Name-intro.png)
+![Webshop Screenshot](client/public/images/homepage/Name-intro.png)
 
 ## Introduction
 
